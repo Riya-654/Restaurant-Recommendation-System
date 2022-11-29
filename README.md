@@ -4,11 +4,13 @@ The problem statement we will be working on for this mini project is to build a 
 ## Proposed Approach
 •	**CONTENT BASED FILTERING**
 Finding similar restaurants based on cuisine preferred by user using TF-IDF and cosine similarity score.
+
 •	**LOCATION BASED FILTERING**
 A dataset with all the locations of the restaurants in the dataset, along with their latitude and longitude values is created. 
 We form clusters of all close by locations using 3 clustering algorithms and choose the most accurate one.
 Using K-Means Clustering, clusters of nearby locations are formed using Euclidean distance as the distance metric for inter-cluster distance. The restaurants recommended using content-based filtering
 technique is made even more personalized by recommending only those restaurants belonging to the same cluster as that of the location mentioned by the user.
+
 •	**FUZZY LOGIC**
 The recommendations would be even more accurate if the recommended restaurant has an overall good mean rating in comparison to other restaurants. It is completely uncertain(fuzzy) as to what value of mean rating is considered to be a really good, average and poor recommendation. We use fuzzy logic to tackle this issue.
 
